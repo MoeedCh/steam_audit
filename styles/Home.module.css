@@ -1,0 +1,62 @@
+.container {
+    display: flex;
+    flex-direction: column;
+    height: 100vh; /* Make the container take up the full viewport height */
+  }
+
+.topBox {
+    flex: 1; /* Make the flexboxes take up equal space */
+    flex-direction: column;
+    display: flex; /* Enable flexbox for the individual boxes */
+    align-items: center;  /* Vertically align content to the bottom */
+    justify-content: center; /* Horizontally center the content */
+  }
+
+.middleBox {
+  flex: 1; /* Make the flexboxes take up equal space */
+  display: flex; /* Enable flexbox for the individual boxes */
+  align-items: center;  /* Vertically align content to the bottom */
+  justify-content: center; /* Horizontally center the content */
+}
+
+.bottomBox {
+  flex: 1; /* Make the flexboxes take up equal space */
+  gap: 20px; /* Add some space between the elements */
+  display: flex; /* Enable flexbox for the individual boxes */
+  align-items: center;  /* Vertically align content to the bottom */
+  justify-content: center; /* Horizontally center the content */
+}
+
+.titleText {
+  font-size: 2rem;
+  font-weight: bold;
+}
+
+.aboutText {
+  font-size: 1rem;
+  padding: 20px;
+  white-space: pre-wrap;
+}
+
+.footerText {
+    font-size: 1rem;
+    white-space: pre-wrap;
+  }
+
+.logo
+{
+  display: flex;
+  align-items: center;  /* Vertically align content to the bottom */
+  justify-content: center; /* Horizontally center the content */
+  width: 100px; /* Set the desired width */
+  height: 100px; /* Set the desired height */
+  object-fit: contain; /* Scale the image to fit inside the container without stretching */
+}
+
+.logoDescription {
+  display: flex;
+  font-size: 1rem;
+  font-weight: bold;
+  align-items: center;  /* Vertically align content to the bottom */
+  justify-content: left; /* Horizontally center the content */
+}
