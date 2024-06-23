@@ -12,6 +12,6 @@ export default function handler(req: NextApiRequest, res: NextApiResponse) {
     }
     // Set a session cookie with the steamId
     res.setHeader('Set-Cookie', `steamId=${user.steamId}; Path=/; HttpOnly`);
-    res.redirect('/'); // Redirect to your desired page after login
+    res.redirect('/home'); // Redirect to your desired page after login
   })(req, res);
 }
